@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* ========= */
+/* Reset DOM */
+/* ========= */
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+    transition: all 0.2s ease-in-out;
+}
+
+html,body
+{
+	width: 100%;
+	height: 100%;
+}
+
+body
+{
+	background: rgba(242, 242, 242, 1.0);
+	color: rgba(0, 0, 0, 0.8);
+}
+
+
+.container
+{
+	padding-top: 1px;
+}
+
+/* =================== */
+/* Start Heading Style */
+/* =================== */
+
+.heading
+{
+	width: 96%;
+	margin: 0 auto;
+	text-align: center;
+	padding: 10px 0;
+	margin-top: 10px;
+	border-radius: 5px;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+	background: rgba(255, 174, 0 , 1.0);
+}
+
+/* ================= */
+/* End Heading Style */
+/* ================= */
+
+
+
+/* =============================== */
+/* Start Form list container Style */
+/* =============================== */
+
+.form_list_container
+{
+	width: 96%;
+	height: 550px;
+	margin: 0 auto;
+	margin-top: 10px;
+	background: rgba(255, 255, 255, 1.0);
+	border-radius: 5px;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+
+/* ========================== */
+/* Start Form container Style */
+/* ========================== */
+
+.form_container
+{
+	width: 30%;
+	height: 100%;
+	min-width: 300px;
+	padding: 10px;
+	background: rgba(255, 174, 0 , 1.0);
+}
+
+.form_container>.form
+{
+	width: 100%;
+	height: 100%;
+	padding-top: 1px;
+	background: pink;
+	background: rgba(255, 255, 255, 1.0);
+	border-radius: 5px;
+	box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.inputBox
+{
+    position: relative;
+    width: 250px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+
+.inputBox input,select
+{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255, 174, 0 , 1.0);
+	background: rgba(255, 255, 255 , 1.0);
+    border-radius: 5px;
+    outline: none;
+/*    color: white;*/
+    font-size: 1em;
+}
+
+.inputBox span
+{
+    text-transform: uppercase;
+    color: rgba(255, 174, 0 , 1.0);
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.65em;
+    padding: 0 10px;
+	background: #fff;
+    border-left: 1px solid rgba(255, 174, 0 , 1.0);
+    border-right: 1px solid rgba(255, 174, 0 , 1.0);
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+}
+
+.form_container>.form button
+{
+	width: 200px;
+	padding: 10px 0;
+	margin-top: 10px;
+	background: rgba(255, 174, 0 , 1.0);
+	border: none;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.form_container .btn
+{
+	text-align: center;
+}
+
+.form_container>.form button:active
+{
+	transform: scale(.98);
+}
+
+/* ======================== */
+/* End Form container Style */
+/* ======================== */
+
+
+/* ===================================== */
+/* Start Employees table container Style */
+/* ===================================== */
+
+.emp_table_container
+{
+	width: 70%;
+}
+
+
+/* Start Employees Header Style */
+.emp_table_container header
+{
+	width: 100%;
+	height: 100px;
+	padding: 10px 0;
+	border: 5px solid rgba(255, 174, 0 , 1.0);
+}
+
+/* End Employees Header Style */
+
+/* Start Employees Table Style */
+.emp_table_container .table_box
+{
+	width: 100%;
+	height: 450px;
+	border: 5px solid rgba(255, 174, 0 , 1.0);
+	overflow: auto;
+}
+
+.emp_table_container table
+{
+	width: 100%;
+}
+
+.emp_table_container table td
+{
+	border: 1px solid rgba(255, 174, 0 , 1.0);
+	text-align: center;
+}
+
+.emp_table_container .pro_img
+{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+/* End Employees Table Style */
+
+
+/* =================================== */
+/* End Employees table container Style */
+/* =================================== */
+
+
+
+/* ============================= */
+/* End Form list container Style */
+/* ============================= */
+
+
+/* ======================= */
+/* Start Media Query Style */
+/* ======================= */
+@media only screen and (max-width: 1100px)
+{
+	.form_list_container
+	{
+		height: auto;
+	}
+	.form_container
+	{
+		width: 100%;
+		height: auto;
+		padding: 0 10px;
+	}
+	.emp_table_container
+	{
+		width: 100%;
+	}
+}
+
+
+/* ===================== */
+/* End Media Query Style */
+/* ===================== */
